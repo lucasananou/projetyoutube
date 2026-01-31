@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Site Vitrine Artisan Couvreur
+
+Site vitrine professionnel orienté SEO local et génération de leads pour un artisan couvreur.
+
+## Stack Technique
+
+- **Next.js 15** (App Router)
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS**
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+
+```bash
+npm install
+```
+
+### Développement
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Configuration
 
-To learn more about Next.js, take a look at the following resources:
+Créer un fichier `.env.local` :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+NEXT_PUBLIC_SITE_URL=https://votre-domaine.fr
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Documentation
 
-## Deploy on Vercel
+Consulter [ARCHITECTURE.md](./ARCHITECTURE.md) pour la documentation complète de l'architecture.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Structure du Projet
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/app/` - Pages et routes (App Router)
+- `src/components/` - Composants React réutilisables
+- `src/config/` - Configuration des services, villes, blog
+- `src/lib/` - Utilitaires et helpers
+- `src/types/` - Types TypeScript
+
+## Features
+
+✅ SEO optimisé (metadata, OpenGraph, JSON-LD)  
+✅ Pages dynamiques par service  
+✅ SEO local par ville  
+✅ Blog avec articles  
+✅ Formulaire de contact avec validation  
+✅ Sitemap & robots.txt dynamiques  
+✅ Mobile-first responsive  
+✅ Performance optimisée  
+
+## License
+
+MIT
