@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --font-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
@@ -31,10 +29,10 @@ body {
 }
 
 /* Details/Summary styling */
-details > summary {
+details>summary {
   list-style: none;
 }
 
-details > summary::-webkit-details-marker {
+details>summary::-webkit-details-marker {
   display: none;
 }
